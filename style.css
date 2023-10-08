@@ -1,0 +1,518 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    align-items: center;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header a{
+    text-decoration: none;
+}
+
+.logo{
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation .btn::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .2s;
+}
+
+.navigation .btn2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform-origin: center;
+    transform: scaleX(1);
+    transition: transform .2s;
+}
+
+
+.navigation .btn:hover::after{
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 60px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.navigation .btnLogin-popup:hover{
+    background: rgb(255, 255, 255);
+    color: #162938;
+}
+
+body{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(to right, #6a328a, #4736a7);
+    background-size: cover;
+    background-position: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.listOfTascs{
+    overflow-y: auto;
+    display: flex;
+    width: 335px;
+    background: rgb(255, 255, 255);
+    padding: 2rem;
+    padding-left: 2rem;
+    border-radius: 60px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 90px rgb(0 0 0 / 40%);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    flex-direction: column;
+}
+
+.listOfTascs::-webkit-scrollbar{
+    display: none;
+}
+
+.listOfTascs li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+
+.listOfTascs a{
+    text-decoration: none;
+    color: #000000;
+    transition: .3s;
+    font-size: 21px;
+}
+
+.listOfTascs .number-1{
+    text-decoration: none;
+    color: #4736a7;
+    transition: .3s;
+    font-size: 21px;
+    pointer-events: none;
+}
+
+.listOfTascs a:hover{
+    color: #4736a7;
+}
+
+.guide{
+    display: flex;
+    width: 900px;
+    background: rgb(255, 255, 255); 
+    padding: 2rem;
+    border-radius: 60px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 90px rgb(0 0 0 / 40%);
+    margin: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.content{
+    display: flex;
+    min-height: calc(100vh - 0px);
+    align-items: center;
+    justify-content: center;
+}
+
+.language-CSharp{ 
+    background: rgb(231, 231, 231);
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: #a1a1a1;
+    
+}
+
+.language-CSharp pre{
+    font-family: 'Source Code Pro', monospace;
+    padding: 1rem;
+    font-size: 21px;
+    overflow: auto;
+    
+}
+
+.language-CSharp .input-show-hide{
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 5px 7px;
+    font-family: 'Source Code Pro', monospace;
+    width: 75px;
+    font-size: 21px;
+}
+
+.language-CSharp .input-show-hide:hover{
+    border: 1px solid #6a328a;
+}
+
+.input-show-hide-hide{
+    display: show !important;
+}
+
+.name h1{
+    display: flex;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.info h1{
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.info a{
+    text-align: left;
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: .3s;
+}
+
+.info p{
+    font-size: 21px;
+    padding-bottom: 10px;
+}
+
+.info a:hover{
+    color: #4736a7;
+}
+
+
+.proverit-nextq{
+    display: grid;
+    margin-top: 35px;
+}
+
+.info .proverit{
+    border: 0;
+    border-radius: 4px;
+    background: #4736a7;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.proverit-nextq .hide{
+    border: 0;
+    border-radius: 4px;
+    background: #6a328a;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hide-otvet{
+    border: 0;
+    border-radius: 4px;
+    background: #6a328a;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.otvet-z{
+    border: 1px solid #000000;
+    border-radius: 4px;
+    padding: 5px 7px;
+    font-family: 'Source Code Pro', monospace;
+    width: 75px;
+    font-size: 21px;
+    background-color:#6a328abb;
+    pointer-events: none;
+}
+
+.otvet-z-hide{
+    display: none !important;
+}
+
+.rezultat{
+    display: flex;
+    font-size: 21px;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+}
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.2s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  .wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+  }
+
+@media(max-width: 1362px){
+    .listOfTascs{
+        width: 335px;
+        margin: 4rem;
+        margin-bottom: 1rem;
+        margin-top: 7.5rem;
+}
+    .content{
+        flex-direction: column;
+    }
+    .footer{
+        margin-top: 9rem;
+    }
+}
+
+@media(max-width: 1024px){
+    .listOfTascs{
+        width: 335px;
+        margin-bottom: 1rem;
+
+    }
+}
+
+
+@media(max-width: 835px){
+    .listOfTascs{
+        width: 335px;
+        margin-bottom: 1rem;
+    }
+    .footer{
+        margin-top: 9rem;
+    }
+}
+
+@media(max-width: 725px){
+    .listOfTascs{
+        width: 335px;
+        margin-top: 9.1rem;
+        margin-bottom: 1rem;
+    }
+    .footer{
+        margin-top: 9rem;
+    }
+}
+
+@media(max-width: 630px){
+    .listOfTascs{
+        width: 335px;
+        margin-bottom: 1rem;
+        margin-top: 11rem;
+    }
+
+    .footer{
+        margin-top: 9rem;
+    }
+}
+
+@media(max-width: 530px){
+    .listOfTascs{
+        width: 335px;
+        margin-bottom: 1rem;
+        margin-top: 13 rem;
+    }
+
+    .footer{
+        margin-top: 9rem;
+    }
+}
+
+@media(max-width: 425px){
+    .listOfTascs{
+        width: 300px;
+        margin-bottom: 2rem;
+
+    }
+    .footer{
+        margin-top: 9rem;
+    }
+
+}
+
+@media(max-width: 411px){
+    .listOfTascs{
+        width: 300px;
+        margin-bottom: 2rem;
+        margin-top: 12.47rem;
+    }
+    .footer{
+        margin-top: 9rem;
+    }
+
+}
+
+@media(max-width: 397px){
+    .listOfTascs{
+        width: 300px;
+        margin-bottom: 2rem;
+        margin-top: 12.47rem;
+
+    }
+    .footer{
+        margin-top: 9rem;
+    }
+
+}
+
+@media(max-width: 375px){
+    .listOfTascs{
+        width: 250px;
+    }
+}
+
+@media(max-width: 320px){
+    .listOfTascs{
+        width: 200px;
+    }
+}
+
+@media(max-width: 1024px){
+    .guide{
+        width: 768px;
+    }
+}
+
+@media(max-width: 835px){
+    .guide{
+        width: 560px;
+    }
+}
+
+@media(max-width: 630px){
+    .guide{
+        width: 335px;
+    }
+}
+
+@media(max-width: 425px){
+    .guide{
+        width: 300px;
+    }
+}
+
+@media(max-width: 375px){
+    .guide{
+        width: 250px;
+    }
+}
+
+@media(max-width: 320px){
+    .guide{
+        width: 200px;
+    }
+}
