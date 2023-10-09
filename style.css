@@ -424,7 +424,7 @@ body{
     .listOfTascs{
         width: 335px;
         margin-bottom: 1rem;
-        margin-top: 13 rem;
+        margin-top: 13rem;
     }
 
     .footer{
@@ -448,7 +448,6 @@ body{
     .listOfTascs{
         width: 300px;
         margin-bottom: 2rem;
-        margin-top: 12.47rem;
     }
     .footer{
         margin-top: 9rem;
@@ -460,7 +459,6 @@ body{
     .listOfTascs{
         width: 300px;
         margin-bottom: 2rem;
-        margin-top: 12.47rem;
 
     }
     .footer{
@@ -508,7 +506,8 @@ body{
 @media(max-width: 375px){
     .guide{
         width: 250px;
-    }
+    }    
+    
 }
 
 @media(max-width: 320px){
